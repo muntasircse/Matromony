@@ -1,9 +1,7 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 
 import 'Header.dart';
-import 'inputWrapper.dart';
+import 'InputWrapper.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -21,7 +19,7 @@ class LoginPage extends StatelessWidget {
         ),
         child: Column(
           children: <Widget>[
-            SizedBox(height: 80,)
+            SizedBox(height: 80,),
             Header(),
             Expanded(child: Container(
               decoration: BoxDecoration(
@@ -30,17 +28,12 @@ class LoginPage extends StatelessWidget {
                     topLeft: Radius.circular(60),
                     topRight: Radius.circular(60),
                   )
-
               ),
               child: InputWrapper(),
             ))
           ],
         ),
-
       ),
-
-
     );
   }
-
 }
